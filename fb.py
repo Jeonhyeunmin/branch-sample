@@ -4,11 +4,7 @@
 
 # -> 내가 원하는 최종 단계의 코드를 만들어내야한다.
 for j in range(4, 15+1):
-    if j % 15 == 0:
-        print('fizzbuzz')
-    elif j % 5 == 0 :
-        print('bizz')
-    elif j % 3 == 0 :
-        print('fizz')
+    if j % 3 == 0 or j % 5 ==0:
+        print('fizz' * (j % 3 == 0) + 'buzz' * ( j % 5 == 0))
     else :
         print(j)
